@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: lensline-eyewear-oms
+    runtime: docker
+    dockerfilePath: ./backend/Dockerfile
+    dockerContext: ./backend
+    plan: free
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.0
